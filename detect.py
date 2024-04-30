@@ -20,7 +20,7 @@ logo_name = ['AAAI', 'ACM', 'IEEE', 'Springer', 'USENIX', 'Berkely', 'Cambridge'
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--attack_model', type=str, default='squeeze')
-parser.add_argument('--attack_logo', type=str, default='ACMMM16')
+parser.add_argument('--attack_logo', type=str, default='IEEE')
 args = parser.parse_args()
 
 model = torch.load('./model/' + args.attack_model + '_normal.pth')
